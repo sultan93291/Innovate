@@ -1,0 +1,1171 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap");
+
+/* root for common code  */
+
+:root {
+  --crimoson: #ff5538;
+  --white: #ffffff;
+  --unique: #fbf3f0cc 80%;
+  --footer: #ffd7c8;
+  --common_box: #c4c4c4;
+  --middle: #fdf9f8;
+  --light-pink: #ffdcd8;
+  --pink: #ffabba;
+  --blue: #29313d;
+  --choclate: #c087ee;
+}
+
+/* ==== common css started here ====  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 0.8;
+}
+
+.common_btn {
+  font-family: "Nunito", sans-serif;
+  height: 64px;
+  width: 146px;
+  background-color: var(--crimoson);
+  border-radius: 18px;
+  border: 1px transparent;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 36px;
+  transition: 0.3s linear;
+  text-transform: capitalize;
+}
+
+.common_btn:hover {
+  border: 1px solid;
+  color: var(--crimoson);
+  background-color: transparent;
+}
+
+.bar_common_text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+.common_paragraph {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--blue);
+  text-transform: capitalize;
+}
+.common_heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: var(--crimoson);
+}
+.common_sub_heading {
+  font-weight: 600px;
+  font-size: 48px;
+  line-height: 67.4px;
+  text-transform: capitalize;
+  color: var(--blue);
+}
+
+/* ==== common css ended here ====  */
+
+/* ==== navbar css started here ====  */
+
+#navbar {
+  width: 1920px;
+}
+
+#navbar .nav_wrapper {
+  height: 64px;
+  position: absolute;
+  width: 1408px;
+  margin: 0 256px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.logo {
+  width: 111px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu {
+  width: 722px;
+  height: 25px;
+  position: relative;
+}
+
+.menu > ul {
+  text-transform: capitalize;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  column-gap: 74px;
+}
+
+.menu > ul li a {
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.menu > ul li a:hover {
+  color: var(--crimoson);
+}
+
+.menu > ul li a i {
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+.button {
+  width: 146px;
+  height: 64px;
+  position: relative;
+}
+/* ==== navbar css ended here ====  */
+
+/* ==== header css started here ====  */
+
+#header {
+  height: 960px;
+  width: 1920px;
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#header img {
+  position: absolute;
+  left: 0;
+}
+
+#header .left_bar {
+  height: 627px;
+  width: 20px;
+  left: 50px;
+  position: absolute;
+  margin-top: 194px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+#header .left_bar .scroll {
+  height: 108px;
+  width: 20px;
+  position: relative;
+}
+#header .left_bar .scroll p {
+  transform: rotate(-90deg);
+  margin-top: 25px;
+  text-align: center;
+}
+
+#header .left_bar .scroll img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#header .left_bar .contact {
+  height: 205px;
+  width: 20px;
+  position: relative;
+}
+
+#header .left_bar .contact p {
+  transform: rotate(-90deg);
+  margin-top: 185px;
+  text-align: center;
+}
+
+#header .left_bar .lang {
+  height: 114px;
+  width: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#header .left_bar .lang p {
+  transform: rotate(-90deg);
+  text-align: center;
+  display: flex;
+}
+
+#header .header_content {
+  width: 771px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 293px;
+}
+
+#header .header_content .main_heading {
+  height: 166px;
+  width: 771px;
+}
+
+#header .header_content .main_heading h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 83.2px;
+  text-align: center;
+  color: var(--blue);
+  text-transform: capitalize;
+}
+
+#header .header_content .sub_heading {
+  width: 547px;
+  height: 72px;
+  margin: 0 112px;
+  margin-top: 24px;
+  text-transform: capitalize;
+}
+#header .header_content .heading_btn {
+  width: 310px;
+  height: 64px;
+  margin: 0 230.5px;
+  margin-top: 44px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+/* ==== header css ended here ====  */
+
+/* ==== card css started here ====  */
+
+#card {
+  width: 1920px;
+  height: 364.64px;
+}
+
+.sun {
+  position: absolute;
+  margin-top: -100px;
+}
+
+.card_wrapper {
+  width: 1410px;
+  height: 327px;
+  position: absolute;
+  margin: 0 255px;
+  margin-top: -170px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.card_wrapper > div {
+  height: 327px;
+  width: 450px;
+  position: relative;
+  background-color: var(--white);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.02);
+}
+
+.card_wrapper div .img_wrapper {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.card_wrapper div .card_content_wrapper {
+  position: absolute;
+  margin-top: 154px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.card_wrapper div .card_heading {
+  position: relative;
+  height: 45px;
+  width: 298px;
+}
+
+.card_wrapper div .card_heading > h3 {
+  font-weight: 600px;
+  font-size: 28px;
+  line-height: 44.8px;
+  text-transform: capitalize;
+  color: var(--blue);
+}
+
+.card_wrapper div .card_sub_heading {
+  height: 72px;
+  width: 374px;
+  position: relative;
+}
+.card_wrapper div .card_sub_heading > p {
+  text-align: left;
+}
+/* ==== card css ended here ====  */
+
+/* ==== experience  css started here ====  */
+#experience {
+  width: 1920px;
+  height: 805px;
+  position: relative;
+}
+
+.experience_txt {
+  position: absolute;
+  margin-left: 252px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.experience_txt .experience_heading {
+  width: 179px;
+  height: 28px;
+}
+
+.experience_txt .experience_sub_heading {
+  width: 449px;
+  height: 134px;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  right: 0;
+  margin-right: -35px;
+  margin-top: -50px;
+  width: 125.46;
+  height: 121.46;
+  overflow: hidden;
+}
+
+.circle img {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cross {
+  position: absolute;
+  right: 0;
+  height: 13px;
+  width: 13px;
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+.cross img {
+  height: 13px;
+  width: 13px;
+  overflow: hidden;
+}
+
+.snake {
+  position: absolute;
+  margin-top: 555.7px;
+}
+
+.experience_box {
+  position: absolute;
+  width: 1920px;
+  height: auto;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+}
+.experience_img {
+  width: 945px;
+  height: 521px;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.experience_img img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.experience_box_content {
+  width: 1080px;
+  height: 626px;
+  background-color: #fbf3f0cc;
+  position: absolute;
+  margin-top: -53px;
+  right: 0;
+  z-index: 0;
+}
+.content_items {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 185px;
+}
+.content_items .content_heading {
+  width: 570px;
+  height: 150px;
+}
+
+.content_items .content_heading h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+  color: var(--blue);
+}
+
+.content_items .content_sub_heading {
+  width: 501px;
+  height: 144px;
+  margin-top: 20px;
+}
+
+.content_items .content_sub_heading > p {
+  text-align: left;
+}
+
+.content_items .content_sub_heading button {
+  margin-top: 62px;
+  width: 181px;
+  height: 64px;
+}
+.blur {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -90px;
+}
+/* ==== experience css ended here ====  */
+
+/* ==== digital css started here ====  */
+#digital {
+  height: 1256px;
+  width: 1920px;
+  border-color: red;
+}
+
+#digital .digital_wrapper {
+  height: auto;
+  width: 1410px;
+  position: relative;
+  margin: 0 255px;
+  margin-top: 100px;
+}
+
+#digital .digital_wrapper .digital_box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#digital .digital_wrapper .digital_box .main_heading {
+  width: 179px;
+  height: 28px;
+}
+
+#digital .digital_wrapper .digital_box .txt_sub_heading {
+  width: 693px;
+  height: 134px;
+}
+
+#digital .digital_wrapper .digital_box .digital_btn {
+  margin-top: 90px;
+  width: 128px;
+  height: 64px;
+}
+
+#digital .digital_wrapper .digital_box .digital_btn button {
+  width: 128px;
+  height: 64px;
+  border: 1px solid;
+  color: var(--crimoson);
+  background-color: transparent;
+  transition: 0.3s linear;
+}
+
+#digital .digital_wrapper .digital_box .digital_btn button:hover {
+  width: 128px;
+  height: 64px;
+  border: none;
+  color: var(--white);
+  background-color: var(--crimoson);
+}
+
+.digital_box_cards {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.digital_box_cards > div {
+  position: relative;
+  background-color: var(--common_box);
+}
+.digital_box_cards > div img {
+  position: absolute;
+  width: 100%;
+  height: 331px;
+  overflow: hidden;
+}
+
+.digital_box_cards > div:nth-child(1) {
+  width: 570px;
+  height: 458px;
+}
+.digital_box_cards > div:nth-child(2) {
+  width: 810px;
+  height: 458px;
+}
+.digital_box_cards > div:nth-child(3) {
+  width: 810px;
+  height: 458px;
+}
+.digital_box_cards > div:nth-child(4) {
+  width: 570px;
+  height: 458px;
+}
+.digital_box_cards > div:nth-child(1) > div {
+  width: 100%;
+  height: 127px;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0px 0px 10px 2px rgba(26, 19, 62, 0.06);
+}
+
+.digital_box_cards > div:nth-child(2) > div {
+  width: 100%;
+  height: 127px;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0px 0px 10px 2px rgba(26, 19, 62, 0.06);
+}
+
+.digital_box_cards > div:nth-child(3) > div {
+  width: 100%;
+  height: 127px;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0px 0px 10px 2px rgba(26, 19, 62, 0.06);
+}
+.digital_box_cards > div:nth-child(4) > div {
+  width: 100%;
+  height: 127px;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0px 0px 10px 2px rgba(26, 19, 62, 0.06);
+}
+
+.digital_box_cards > div:nth-child(4) > div::after {
+  content: url("../images/x.png");
+  height: 13px;
+  width: 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: -99px;
+}
+
+.digital_box_footer {
+  position: relative;
+}
+
+.digital_box_footer .box_txt {
+  position: absolute;
+  margin: 30px 0 0 30px;
+}
+
+.digital_box_footer .box_txt .txt_heading {
+  width: 299px;
+  height: 39px;
+}
+.digital_box_footer .box_txt .txt_heading h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 39px;
+  text-transform: capitalize;
+}
+
+.digital_box_footer .box_txt .box_txt_sub_heading {
+  width: 88px;
+  height: 18px;
+  margin-top: 10px;
+}
+.digital_box_footer .box_txt .box_txt_sub_heading p {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--crimoson);
+}
+/* ==== digital css ended here ====  */
+#counting {
+  height: 730px;
+  width: 1920px;
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+#counting .counting_wrapper {
+  width: 1200px;
+  height: 500px;
+  margin: 0 320px;
+  margin-top: 120px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#counting .counting_wrapper .conuting_service {
+  height: auto;
+  width: 570px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#counting .counting_wrapper .counting_items > div {
+  position: absolute;
+}
+
+#counting .counting_wrapper .conuting_service > div {
+  height: 230px;
+  width: 259px;
+  position: relative;
+  background-color: var(--white);
+  box-shadow: 0px 0px 10px 2px rgba(26, 19, 62, 0.06);
+}
+#counting .counting_wrapper .counting_items {
+  height: 492px;
+  width: 570px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#counting .counting_wrapper .counting_items .headings {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.counting_heading {
+  width: 570px;
+  height: 201px;
+  position: relative;
+}
+.counting_heading h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-transform: capitalize;
+}
+#counting .counting_wrapper .counting_items .counting_sub_heading {
+  width: 550px;
+  height: 144px;
+  margin-top: 20px;
+  position: relative;
+}
+.counting_sub_heading p {
+  text-align: left;
+}
+
+.counting_sub_heading button {
+  margin-top: 54px;
+  width: 181px;
+  height: 64px;
+}
+
+.single_service {
+  position: relative;
+}
+
+.service_info {
+  width: 139px;
+  height: 206px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service_info .service_heading {
+  width: 103px;
+  height: 56px;
+}
+
+.service_info .service_heading h4 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.service_info .service_sub_heading {
+  width: 139px;
+  height: 18px;
+}
+/* ==== compaines css started here ====  */
+#companies {
+  width: 1920px;
+  height: 564px;
+  position: relative;
+}
+
+#companies .comapanies_wrapper {
+  width: 1410px;
+  margin: 0 255px;
+  position: absolute;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+#companies .comapanies_wrapper .companies_heading {
+  width: 849px;
+  height: 134px;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+}
+#companies .comapanies_wrapper .companies_heading h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 67px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#companies .companies_box {
+  height: 130px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#companies .companies_box > div {
+  width: 210px;
+  height: 130px;
+  position: relative;
+  background-color: #fdf9f8;
+  box-shadow: 0px 0px 10px 2px rgba(26, 19, 62, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#companies .companies_box > div img {
+  width: 128px;
+  height: 32px;
+  overflow: hidden;
+}
+/* ==== compaines css ended here ====  */
+
+/* ==== customer css started here ====  */
+#customer {
+  width: 1920px;
+  height: 797px;
+  position: relative;
+}
+#customer .customer_wrapper {
+  width: 1350px;
+  height: 557px;
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 254px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 156px;
+}
+#customer .customer_wrapper > div {
+  height: 100%;
+  width: 40%;
+}
+#customer .customer_wrapper .customer_content {
+  height: 557px;
+  width: 690px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+#customer .customer_wrapper .customer_img {
+  width: 501px;
+  height: 557px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#customer .customer_wrapper .customer_img img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+}
+#customer .customer_wrapper .customer_content .customer_heading {
+  width: 446px;
+  height: 67px;
+}
+#customer .customer_wrapper .customer_content .customer_heading h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 67px;
+  text-align: left;
+  color: var(--blue);
+  text-transform: capitalize;
+}
+
+.customer_box {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 28px;
+}
+
+.customer_box > div {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+.customer_box > div:nth-child(1) {
+  background: url("../images/pexels-cleyton-ewerton-4859166.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.customer_box > div:nth-child(2) {
+  background: url("../images/pexels-teddy-joseph-2955375.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.customer_box > div:nth-child(3) {
+  background: url("../images/pexels-cleyton-ewerton-4859166.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.customer_box > div:nth-child(4) {
+  background: url("../images/pexels-andrea-piacquadio-3778603.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.customer_sub_heading {
+  width: 690px;
+  height: 108px;
+  opacity: 0.8px;
+}
+.customer_sub_heading p {
+  text-align: left;
+}
+.jonathon {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+.jon {
+  width: 159px;
+  height: 65px;
+}
+.jon h3 {
+  font-family: Open Sans;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.buttons {
+  height: 64px;
+  width: 152px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+.buttons .btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+}
+.buttons .btn button {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  background-color: var(--crimoson);
+  border: 1px transparent;
+  color: var(--white);
+  font-size: 24px;
+  transition: 0.3s linear;
+}
+.buttons .btn button:hover {
+  border: 1px solid;
+  color: var(--crimoson);
+  background-color: transparent;
+}
+/* ==== customer css ended here ====  */
+
+/* ==== project css started here ====  */
+#project {
+  width: 1920px;
+  height: 446px;
+  background-color: var(--footer);
+  position: relative;
+}
+#project .curve{
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+#project .poject-wrapper {
+  height: auto;
+  width: 1410px;
+  margin: 0 255px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+}
+.project_content{
+  margin-top: 100px;
+}
+#project .poject-wrapper .project_btn {
+  margin-top: 130px;
+  z-index: 10;
+}
+#project .poject-wrapper .project_content {
+  display: flex;
+  flex-direction: column;
+}
+#project .poject-wrapper .project_content .project_heading {
+  width: 84px;
+  height: 28px;
+}
+#project .poject-wrapper .project_content .project_heading p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--blue);
+}
+#project .poject-wrapper .project_content .project_sub_heading {
+  width: 339px;
+  height: 67px;
+  margin-top: 7px;
+  text-transform: capitalize;
+  color: var(--blue);
+}
+
+#project .poject-wrapper .project_content .project_sub_heading h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 67px;
+  text-transform: capitalize;
+  color: var(--blue);
+}
+
+#project .poject-wrapper .project_content .project_paragraph {
+  width: 1283px;
+  height: 72px;
+  opacity: 0.8px;
+  margin-top: 72px;
+}
+#project .poject-wrapper .project_content .project_paragraph p {
+  text-align: left;
+}
+#project .poject-wrapper .project_content .project_paragraph p::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 1410px;
+  background-color: var(--blue);
+  margin-top: -24px;
+}
+/* ==== project css ended here ====  */
+
+/* ==== innovate css started here ====  */
+#innovate {
+  height: 631px;
+  width: 1920px;
+  position: relative;
+}
+#innovate .innovate_wrapper {
+  position: absolute;
+  width: 1410px;
+  margin: 0 255px;
+  margin-top: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#innovate .innovate_wrapper > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#innovate .innovate_wrapper > div:nth-child(1) {
+  width: 449px;
+  height: auto;
+  opacity: 0.9px;
+}
+#innovate .innovate_wrapper > div:nth-child(2) {
+  width: 102px;
+  height: auto;
+}
+#innovate .innovate_wrapper > div:nth-child(3) {
+  width: 166px;
+  height: auto;
+}
+#innovate .innovate_wrapper > div:nth-child(4) {
+  width: 160px;
+  height: auto;
+}
+.innovates_main img {
+  width: 135px;
+  height: 73px;
+}
+.innovates_paragraph {
+  width: 449px;
+  height: 96px;
+  opacity: 0.9px;
+  margin-top: 44px;
+}
+.innovates_paragraph p {
+  text-align: left;
+}
+.innovate_features .feature_heading {
+  width: 102px;
+  height: 34px;
+}
+.innovate_wrapper h3 {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  text-align: left;
+  color: var(--blue);
+  text-transform: capitalize;
+}
+.innovate_wrapper ul {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  text-transform: capitalize;
+}
+#innovate .lowwer_wrapper {
+  position: absolute;
+  height: 32px;
+  width: 1410px;
+  margin: 0 255px;
+  bottom: 0;
+  margin-bottom: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#innovate .lowwer_wrapper > div {
+  height: 32px;
+  opacity: 0.9;
+}
+#innovate .lowwer_wrapper > div:nth-child(1) {
+  width: 315px;
+}
+#innovate .lowwer_wrapper > div:nth-child(2) {
+  width: 111px;
+}
+#innovate .lowwer_wrapper > div:nth-child(3) {
+  width: 149px;
+}
+/* ==== innovate css ended here ====  */
